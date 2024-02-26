@@ -1,8 +1,8 @@
 ---
 layout: ../../components/blog/PostBase.astro
-title: 'Hello World!'
-description: 'An introduction to me, this site, and this blog.'
-pubDate: 2024-Jan-06
+title: 'Post 2'
+description: 'An second post'
+pubDate: 2024-Jan-07
 updatedDate: 2024-Feb-23
 tags: ["astro", "blogging", "learning in public"]
 ---

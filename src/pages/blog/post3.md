@@ -1,8 +1,8 @@
 ---
 layout: ../../components/blog/PostBase.astro
-title: 'Hello World!'
+title: 'A Third Post'
 description: 'An introduction to me, this site, and this blog.'
-pubDate: 2024-Jan-06
+pubDate: 2024-Jan-08
 updatedDate: 2024-Feb-23
 tags: ["astro", "blogging", "learning in public"]
 ---
@@ -40,3 +40,4 @@ Other text
     Apple pie cookie cheesecake jelly beans wafer chocolate bar.
     Muffin sweet roll sweet sesame snaps powder.
 </p>
+

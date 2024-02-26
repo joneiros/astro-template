@@ -1,7 +1,7 @@
 export const AppConfig = {
     current_year: 2024,
     author_first: 'Jon',
-    author_full: 'Jon Gander',
+    author_full: 'Jon Ipsum',
     nav: [
         {
             url: '/',
@@ -26,8 +26,8 @@ export const AppConfig = {
     ],
     external: {
         me: {
-            github: 'https://github.com/joneiros',
-            linkedin: 'https://www.linkedin.com/in/jon-gander',
+            github: 'https://github.com/',
+            linkedin: 'https://www.linkedin.com/',
         },
         astro: 'https://astro.build'
     }

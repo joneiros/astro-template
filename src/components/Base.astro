@@ -8,7 +8,7 @@ import Footer from '../components/Footer.astro'
 const { title, description, url } = Astro.props;
 const pageTitle = title ?? AppConfig.author_full;
 const pageDescription = description ?? "Personal website and software blog.";
-const pageUrl = url ?? "https://jongander.com";
+const pageUrl = url ?? "https://TDO";
 ---
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ const pageUrl = url ?? "https://jongander.com";
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <meta property="og:locale" content="en_CA" />
         <meta property="og:locale:alternate" content="en_US" />
-        <meta content="jongander.com" property="og:site_name">
+        <meta content="TODO.com" property="og:site_name">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content={Astro.generator} />
 
@@ -28,7 +28,7 @@ const pageUrl = url ?? "https://jongander.com";
         <meta name="description" content={pageDescription}>
         <meta property="og:url" content={pageUrl} >
 
-        <meta content="https://jongander.com/images/ie-bust.png)" property="og:image">
+        <meta content="https://localhost:4321/images/bust50.webp)" property="og:image">
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:alt" content="Low-poly bust." />
 
@@ -41,7 +41,7 @@ const pageUrl = url ?? "https://jongander.com";
         <div id="inner-body">
             <header>
                 <h1 class="nav-sitename">
-                    <a class="decorationless" href="/">JON GANDER</a>
+                    <a class="decorationless" href="/">JON IPSUM</a>
                 </h1>
                 <Navigation />
             </header>
