@@ -1,0 +1,63 @@
+.post-list {
+    background: var(--linecode-background-color);
+    border-radius: 10px;
+    border: .2em solid var(--code-border-color);
+    margin-bottom: 1.5em;
+    box-shadow:
+        .75em 0 .75em -.75em var(--accent-color),
+        -.75em 0 .75em -.75em var(--accent-color),
+        0 .5em .5em .1em var(--far-background-color);
+}
+
+.post-list-item {
+    padding: .2em .5em;
+    list-style: none;
+    margin-left: -2.5em;
+    box-shadow:
+        0 .5em .5em -.5em var(--far-background-color);
+}
+
+.post-list-item::marker {
+    display: inline;
+    font-size: .5em;
+}
+
+.post-list-item a {
+    font-size: 1.15em;
+    display: block;
+}
+
+.post-list-item:hover a {
+    text-decoration: none;
+}
+
+.post-list-item:first-child {
+    padding-top: .5em;
+}
+
+.post-list-item:last-child {
+    margin-bottom: 8em;
+}
+
+.post-list-item:hover {
+    list-style: "𒀖";
+    text-decoration: none;
+    background: var(--hover-highlight-color);
+    border-radius: 5px;
+    box-shadow:
+        .75em 0 .75em -.75em var(--code-border-color),
+        -.75em 0 .75em -.75em var(--code-border-color),
+        inset .75em 0 .75em -.85em var(--code-border-color),
+        inset -.75em 0 .75em -.85em var(--code-border-color),
+        0 .5em .5em .1em var(--far-background-color),
+        inset 0 .25em .5em .005em var(--code-border-color),
+        inset 0 -.25em .25em .005em var(--code-border-color);
+}
+
+.post-list-item p{
+    font-style: italic;
+    font-size: .75em;
+    padding-left: 2em;
+    padding-right: .5em;
+    margin-top: .2em;
+}

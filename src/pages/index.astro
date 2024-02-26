@@ -1,0 +1,41 @@
+---
+import Base from '../components/Base.astro'
+import {AppConfig} from '../utils/AppConfig.ts'
+---
+<Base>
+    <style>
+        #mesvg {
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+        }
+
+        #mesvg img{
+            max-height: 10em;
+            width: auto;
+            height: auto;
+            z-index: 2;
+        }
+
+        @media only screen and (min-width: 750px) {
+            #mesvg img{
+                max-height: 12em;
+            }
+        }
+    </style>
+    <div id="home-content">
+        <div id="mesvg">
+            <img
+                src="/images/ie-bust.png"
+                alt="A beautiful image of Internet Explorer"
+                width="300"
+                height="260"
+            >
+        </div>
+
+        <h1>Hi!</h1>
+        <p>
+            I'm {AppConfig.author_first}.
+            Welcome to my site!
+    </div>
+</Base>

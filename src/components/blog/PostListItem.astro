@@ -1,0 +1,9 @@
+---
+const {url, frontmatter} = Astro.props;
+---
+<li class="post-list-item">
+    <a class="decorationless" href={url}>
+        {frontmatter.title}
+        <p>{frontmatter.description}</p>
+    </a>
+</li>

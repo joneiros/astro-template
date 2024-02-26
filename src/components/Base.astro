@@ -1,0 +1,54 @@
+---
+import '../styles/global-mobile-first.css';
+import '../styles/global-desktop-secondary.css';
+import {AppConfig} from '../utils/AppConfig.ts'
+import Navigation from './nav/Navigation.astro'
+import Footer from '../components/Footer.astro'
+
+const { title, description, url } = Astro.props;
+const pageTitle = title ?? AppConfig.author_full;
+const pageDescription = description ?? "Personal website and software blog.";
+const pageUrl = url ?? "https://jongander.com";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="utf-8" name="charset">
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta property="og:locale" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_US" />
+        <meta content="jongander.com" property="og:site_name">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content={Astro.generator} />
+
+        <title>{pageTitle}</title>
+        <meta name="title" content={pageTitle}>
+        <meta name="description" content={pageDescription}>
+        <meta property="og:url" content={pageUrl} >
+
+        <meta content="https://jongander.com/images/ie-bust.png)" property="og:image">
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:alt" content="Low-poly bust." />
+
+        <link rel="icon" type="image/png" href="/icons/bust-icon.png" />
+
+        <meta http-equiv="Cache-Control" content="Public" />
+        <meta http-equiv="Expires" content="31536000" />
+    </head>
+    <body>
+        <div id="inner-body">
+            <header>
+                <h1 class="nav-sitename">
+                    <a class="decorationless" href="/">JON GANDER</a>
+                </h1>
+                <Navigation />
+            </header>
+            <div id="headerless-horseman">
+                <slot/>
+            </div>
+           <Footer/>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+h1 {
+    margin-bottom: 0;
+}
+
+.publish-date {
+    font-size: .8em;
+}
+
+.update-date {
+    font-size: .8em;
+}
+
+@media only screen and (min-width: 375px) {
+    .publish-date {
+        display: inline;
+    }
+
+    .update-date {
+        display: inline;
+        margin-left: 2em;
+    }
+}
+
+
+@media only screen and (min-width: 750px) {
+    .publish-date {
+        display: inline;
+    }
+
+    .update-date {
+        display: inline;
+        margin-left: 4em;
+    }
+
+    .astro-code {
+        font-size: 1em;
+    }
+}

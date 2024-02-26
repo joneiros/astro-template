@@ -1,0 +1,9 @@
+# Behaviour Expectations
+- on desktop, the nav items should never be hidden
+- on mobile...
+    - when the nav menu is not visible...
+        - then clicking on the hamburger menu should show the nav.
+        - then clicking anywhere other than the hamburger should do nothing.
+    - when the nav menu is visible...
+        - then clicking a nav item should leave the nav visible while navigation takes place.
+        - then clicking outside the nav menu should hide the nav menu.

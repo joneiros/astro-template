@@ -1,0 +1,26 @@
+---
+import Base from '../Base.astro'
+import './post.css'
+import {AppConfig} from '../../utils/AppConfig.ts'
+
+const { frontmatter } = Astro.props;
+const pageTitle = AppConfig.author_full + " - "  + frontmatter.title;
+const titleUrlFormatted = frontmatter.title.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, '').replaceAll(" ", "-");
+const pageUrl = "https://jongander.com/blog/" + titleUrlFormatted + "/";
+---
+
+<Base title={pageTitle} description={frontmatter.description} url={pageUrl}>
+    <h1>{frontmatter.title}</h1>
+    <p class="publish-date">
+        Created: {frontmatter.pubDate}
+    </p>
+    {frontmatter.updatedDate &&
+        <p class="update-date">
+            Updated: {frontmatter.updatedDate}
+        </p>
+    }
+    <hr>
+    <div class="blogpost-contents">
+        <slot />
+    </div>
+</Base>

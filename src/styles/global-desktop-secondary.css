@@ -1,0 +1,70 @@
+@media only screen and (min-width: 750px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    header {
+        grid-template-columns: .3fr .7fr;
+        grid-template-rows: 3.5em 0;
+    }
+
+    header h1 {
+        justify-self: left;
+        font-size: 1.5rem;
+        margin-bottom: -.8em;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        position: relative;
+        right: 0;
+    }
+
+    .nav-links a {
+        margin-right: .2em;
+        display: inline;
+        border-radius: 5px 10px 5px 10px;
+    }
+
+    #headerless-horseman {
+        padding: 0 2vw;
+    }
+
+    .astro-code {
+        margin-left: .25vw;
+    }
+
+      .nav-links a:hover, .nav-links a:focus {
+        text-decoration: none;
+        border: .10em solid var(--nav-text-color);
+        animation: link-animation .8s forwards;
+      }
+
+      @keyframes link-animation {
+        0% {
+            color: var(--nav-text-color);
+            text-shadow: 0 0 0 var(--background-color);
+            background-color: var(--background-color);
+        }
+        20% {
+            color: var(--nav-text-color);
+            text-shadow:
+                5px 25px 7px var(--nav-text-color);
+        }
+        100% {
+            color: var(--text-color-main);
+            text-shadow:
+                5px 25px 7px var(--text-color-main);
+            background-color: var(--hover-highlight-color);
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #headerless-horseman {
+        padding: 0 1.5em;
+    }
+}

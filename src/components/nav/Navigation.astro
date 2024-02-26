@@ -1,0 +1,13 @@
+---
+import { AppConfig } from "../../utils/AppConfig";
+import Hamburger from './Hamburger.astro'
+---
+<Hamburger/>
+<script src="./hamburger.js" />
+<nav>
+    <div class="nav-links">
+        {AppConfig.nav.map((navItem) =>
+            <a class="orange-border decorationless" href={navItem.url}>{navItem.title}</a>
+        )}
+    </div>
+</nav>

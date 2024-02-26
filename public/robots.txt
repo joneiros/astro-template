@@ -1,0 +1,9 @@
+# Initial iteration blocks everything. When refining for SEO, read:
+# https://yoa.st/robots-txt or https://yoast.com/ultimate-guide-robots-txt/
+# and read their https://yoast.com/robots.txt which has some good examples of
+# bots that don't bring any value to them.
+
+# Global rules
+# -----------------
+User-agent: *
+Disallow:

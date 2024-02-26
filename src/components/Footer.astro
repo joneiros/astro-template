@@ -1,0 +1,33 @@
+---
+import {AppConfig} from '../utils/AppConfig.ts'
+---
+
+<footer>
+    <div class="copyright">
+        © {AppConfig.author_full} {AppConfig.current_year}.
+        Designed and built by {AppConfig.author_full}, powered by
+        <a href={AppConfig.external.astro}>Astro</a>.
+    </div>
+    <div class="external-link-logos">
+        <a class="hide-text" href={AppConfig.external.me.linkedin}>
+            <img
+                class="linkedin-logo"
+                src="/icons/linkedin-square.png"
+                alt="LinkedIn"
+                loading="lazy"
+                width="35"
+                height="30"
+            />
+            Link to Jon Gander's LinkedIn
+        </a>
+        <a class="hide-text" style="text-decoration: none;" href={AppConfig.external.me.github}>
+            <img
+                class="github-logo"
+                src="/icons/github-mark.svg"
+                alt="GitHub"
+                loading="lazy"
+            />
+            Link to Jon Gander's GitHub
+        </a>
+    </div>
+</footer>

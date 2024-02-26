@@ -1,0 +1,44 @@
+---
+import '../components/blog/postList.css'
+import Base from '../components/Base.astro'
+import PostListItem from '../components/blog/PostListItem.astro';
+const allPosts = await Astro.glob('../pages/blog/*.md');
+const sortByDate = (posts) => {
+  return posts.sort(
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
+  );
+};
+const sortedPosts = sortByDate(allPosts);
+---
+
+<Base>
+    <h1>Blog</h1>
+    <div style="margin-left: 2em; margin-right: 1em;">
+        <p>
+            Congratulations on finding the blog. Your prize is reading.
+        </p>
+        <p>
+            This space has the affordance
+            of expressive narration and fun tangents. If you're trying to get a
+            sense of who I am through these posts,
+            please note that I tailor my delivery to the
+            given situation. In work and in-person environments I am likely
+            to be comparatively focused and concise (I do LOVE to write, but
+            am more priority-conscious outside this space).
+
+        </p>
+        <p>
+            All of these posts are written by me. If I incorporate other authors
+            or AI assistance at any point, I will mark those sections as such
+            explicitly.
+        </p>
+    </div>
+    <h2>Posts</h2>
+    <ul class="post-list">
+        {sortedPosts.map((post) =>
+            <PostListItem url={post.url} frontmatter={post.frontmatter}/>
+        )}
+    </ul>
+</Base>
