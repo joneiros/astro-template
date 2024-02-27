@@ -1,3 +1,17 @@
+# Astro Template
+This is an [Astro](https://astro.build) template for building a personal
+website. If you are new to Astro, I highly recommend checking out their main
+page before diving into this template.
+
+You can check out a live example of this template on my personal site,
+at [jongander.com](https://jongander.com).
+
+_Note that I have continued to develop
+my personal site, so it may not align with this template fully._
+
+---
+---
+
 # Setup and Run Commands
 All commands are run from the root of the project, from a terminal:
 
