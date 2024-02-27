@@ -6,7 +6,7 @@ import {AppConfig} from '../../utils/AppConfig.ts'
 const { frontmatter } = Astro.props;
 const pageTitle = AppConfig.author_full + " - "  + frontmatter.title;
 const titleUrlFormatted = frontmatter.title.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, '').replaceAll(" ", "-");
-const pageUrl = "https://localhost.com/blog/" + titleUrlFormatted + "/";
+const pageUrl = AppConfig.base_url + "/blog/" + titleUrlFormatted + "/";
 ---
 
 <Base title={pageTitle} description={frontmatter.description} url={pageUrl}>

@@ -1,4 +1,5 @@
 export const AppConfig = {
+    base_url: 'https://mycoolsite.com.fake',
     current_year: 2024,
     author_first: 'Jon',
     author_full: 'Jon Ipsum',
@@ -14,10 +15,6 @@ export const AppConfig = {
         {
             url: '/now',
             title: 'Now',
-        },
-        {
-            url: '/projects',
-            title: 'Projects',
         },
         {
             url: '/blog',
